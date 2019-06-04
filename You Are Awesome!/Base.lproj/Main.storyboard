@@ -45,7 +45,7 @@
                                     <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4y-Ki-xl4"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-en-4ar">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-en-4ar">
                                 <rect key="frame" x="20" y="207" width="374" height="651"/>
                             </imageView>
                         </subviews>
@@ -68,6 +68,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="awesomeImageView" destination="jd6-en-4ar" id="eb4-rV-n4C"/>
                         <outlet property="messageLabel" destination="bQx-RX-f0E" id="PvI-zj-5c1"/>
                     </connections>
                 </viewController>
@@ -76,7 +77,4 @@
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="image0" width="475" height="633"/>
-    </resources>
 </document>
