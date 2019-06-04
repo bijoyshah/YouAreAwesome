@@ -25,23 +25,46 @@
                                 <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQx-RX-f0E">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQx-RX-f0E">
                                 <rect key="frame" x="20" y="52" width="374" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="vnp-qe-eFd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="du7-nz-s2v">
-                                <rect key="frame" x="156" y="169" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="du7-nz-s2v">
+                                <rect key="frame" x="155" y="169" width="104" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="6eK-Dk-hTK"/>
+                                    <constraint firstAttribute="height" constant="30" id="cYL-g7-FMb"/>
+                                </constraints>
                                 <state key="normal" title="Show Message"/>
                                 <connections>
                                     <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4y-Ki-xl4"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-en-4ar">
+                                <rect key="frame" x="20" y="207" width="374" height="651"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jd6-en-4ar" secondAttribute="bottom" constant="20" id="5Nz-K6-que"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bQx-RX-f0E" secondAttribute="trailing" constant="20" id="APt-RQ-ogg"/>
+                            <constraint firstItem="bQx-RX-f0E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Agr-Bo-cYy"/>
+                            <constraint firstItem="du7-nz-s2v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dq2-NR-YsN"/>
+                            <constraint firstItem="bQx-RX-f0E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="GB2-h0-XwY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jd6-en-4ar" secondAttribute="trailing" constant="20" id="Lpj-bS-YVW"/>
+                            <constraint firstItem="jd6-en-4ar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R0x-7P-YPF"/>
+                            <constraint firstItem="jd6-en-4ar" firstAttribute="top" secondItem="du7-nz-s2v" secondAttribute="bottom" constant="8" id="i9G-fg-Crx"/>
+                            <constraint firstItem="jd6-en-4ar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kbo-O9-yTa"/>
+                            <constraint firstItem="jd6-en-4ar" firstAttribute="top" secondItem="du7-nz-s2v" secondAttribute="bottom" constant="8" id="kgJ-ng-o0x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jd6-en-4ar" secondAttribute="trailing" constant="20" id="mfL-eq-wjO"/>
+                            <constraint firstAttribute="bottom" secondItem="jd6-en-4ar" secondAttribute="bottom" constant="38" id="n7I-eq-Ba2"/>
+                            <constraint firstItem="du7-nz-s2v" firstAttribute="top" secondItem="bQx-RX-f0E" secondAttribute="bottom" constant="8" id="xbx-35-e7H"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -53,4 +76,7 @@
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image0" width="475" height="633"/>
+    </resources>
 </document>
