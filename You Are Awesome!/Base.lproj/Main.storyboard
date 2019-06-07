@@ -34,47 +34,70 @@
                                 <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-en-4ar">
+                                <rect key="frame" x="20" y="207" width="374" height="610"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="du7-nz-s2v">
-                                <rect key="frame" x="155" y="169" width="104" height="30"/>
+                                <rect key="frame" x="290" y="169" width="104" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="104" id="6eK-Dk-hTK"/>
-                                    <constraint firstAttribute="height" constant="30" id="cYL-g7-FMb"/>
+                                    <constraint firstAttribute="width" constant="104" id="kFT-jQ-atf"/>
+                                    <constraint firstAttribute="height" constant="30" id="m2X-hT-XL3"/>
                                 </constraints>
                                 <state key="normal" title="Show Message"/>
                                 <connections>
                                     <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4y-Ki-xl4"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-en-4ar">
-                                <rect key="frame" x="20" y="207" width="374" height="651"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Sound:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y75-2R-cCB">
+                                <rect key="frame" x="20" y="174" width="91" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="N5x-15-plg"/>
+                                    <constraint firstAttribute="height" constant="21" id="ZqW-KH-Rwh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0s-0x-iOL">
+                                <rect key="frame" x="119" y="168" width="51" height="31"/>
+                                <connections>
+                                    <action selector="soundSwitchPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="DVS-mf-fKb"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="b0s-0x-iOL" firstAttribute="leading" secondItem="Y75-2R-cCB" secondAttribute="trailing" constant="8" id="4Z0-UW-jX3"/>
                             <constraint firstAttribute="bottom" secondItem="jd6-en-4ar" secondAttribute="bottom" constant="20" id="5Nz-K6-que"/>
+                            <constraint firstItem="Y75-2R-cCB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9zd-Y7-wqZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bQx-RX-f0E" secondAttribute="trailing" constant="20" id="APt-RQ-ogg"/>
                             <constraint firstItem="bQx-RX-f0E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Agr-Bo-cYy"/>
-                            <constraint firstItem="du7-nz-s2v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dq2-NR-YsN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jd6-en-4ar" secondAttribute="bottom" constant="45" id="Eig-tR-Xjv"/>
                             <constraint firstItem="bQx-RX-f0E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="GB2-h0-XwY"/>
+                            <constraint firstItem="du7-nz-s2v" firstAttribute="top" secondItem="bQx-RX-f0E" secondAttribute="bottom" constant="8" id="GQg-BT-w0G"/>
+                            <constraint firstItem="b0s-0x-iOL" firstAttribute="top" secondItem="bQx-RX-f0E" secondAttribute="bottom" constant="7" id="JgU-OT-2AU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jd6-en-4ar" secondAttribute="trailing" constant="20" id="Lpj-bS-YVW"/>
+                            <constraint firstItem="Y75-2R-cCB" firstAttribute="top" secondItem="bQx-RX-f0E" secondAttribute="bottom" constant="13" id="Pq6-Xg-S5N"/>
                             <constraint firstItem="jd6-en-4ar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R0x-7P-YPF"/>
-                            <constraint firstItem="jd6-en-4ar" firstAttribute="top" secondItem="du7-nz-s2v" secondAttribute="bottom" constant="8" id="i9G-fg-Crx"/>
+                            <constraint firstItem="jd6-en-4ar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="afW-oc-plA"/>
+                            <constraint firstItem="jd6-en-4ar" firstAttribute="top" secondItem="du7-nz-s2v" secondAttribute="bottom" constant="8" id="hPx-ab-opO"/>
                             <constraint firstItem="jd6-en-4ar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kbo-O9-yTa"/>
-                            <constraint firstItem="jd6-en-4ar" firstAttribute="top" secondItem="du7-nz-s2v" secondAttribute="bottom" constant="8" id="kgJ-ng-o0x"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jd6-en-4ar" secondAttribute="trailing" constant="20" id="mfL-eq-wjO"/>
                             <constraint firstAttribute="bottom" secondItem="jd6-en-4ar" secondAttribute="bottom" constant="38" id="n7I-eq-Ba2"/>
-                            <constraint firstItem="du7-nz-s2v" firstAttribute="top" secondItem="bQx-RX-f0E" secondAttribute="bottom" constant="8" id="xbx-35-e7H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="du7-nz-s2v" secondAttribute="trailing" constant="20" id="wJe-gi-m0E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jd6-en-4ar" secondAttribute="trailing" constant="20" id="zXe-oN-9qw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="awesomeImageView" destination="jd6-en-4ar" id="eb4-rV-n4C"/>
                         <outlet property="messageLabel" destination="bQx-RX-f0E" id="PvI-zj-5c1"/>
+                        <outlet property="soundSwitch" destination="b0s-0x-iOL" id="VSx-nd-uN5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+            <point key="canvasLocation" x="46.376811594202906" y="20.089285714285712"/>
         </scene>
     </scenes>
 </document>
